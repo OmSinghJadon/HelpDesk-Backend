@@ -16,6 +16,7 @@ import  prisma from "./database.js";
 }
 
  const createQuery = async({data}) =>{
+    
     return await prisma.query.create({
         data:{
             title : data.title,

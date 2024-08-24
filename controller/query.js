@@ -68,7 +68,7 @@ export const createQuery = async (req, res) => {
       name,
       email,
       phone,
-      uuid,
+      
       isAdmin : isAdmin === "true"
     };
     //Creating user if it doesnot exist in database
@@ -76,7 +76,7 @@ export const createQuery = async (req, res) => {
 
      // Preparing data for creating query
     data = {
-      uuid,
+      uuid : user.uuid,
       title,
       description,
       origin,
